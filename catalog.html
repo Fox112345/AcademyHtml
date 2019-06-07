@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Барбершоп Бородинский</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+    <header class="main-header">
+        <div class="container">
+            <nav class='main-navigation'>
+                <a href="#" class="main-header-logo">
+                    <img src="img/logo.svg"  alt="Логотип барбершопа">
+                </a>
+                <div class="main-navigation-wrapper">
+                    <div class="container">
+                        <ul class="site-navigation">
+                            <li><a href="info.html">Информация</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="price.html">Прайс-лист</a></li>
+                            <li><a href="catalog.html">Магазин</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul class="user-navigation">
+                            <img src="img/login.svg" width="24" height="24" alt="Логин в ЛК">
+                            <a class="login-link">Вход</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="catalog-container">
+
+        <h1 class="page-title">Средства для ухода</h1>
+
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item"><a href="catalog.html">Магазин</a></li>
+            <li class="breadcrumbs-current breadcrumbs-item">Средства для ухода</li>
+        </ul>
+        <div class="catalog-collumns">
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form action="https://echo.htmlacademy.ru" class="filter" method="GET">
+                    <fieldset>
+                        <legend>Производители:</legend>
+                        <ul>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-baxter-of-callifornia"
+                                    name="baxter-of-callifornia" disabled>
+                                <label for="filter-baxter-of-callifornia">Baxter of California</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-mr-natty" type="checkbox"
+                                    name="mr-natty">
+                                <label for="filter-mr-natty">Mr Natty</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-savernico"
+                                    type="checkbox" name="savernico">
+                                <label for="filter-savernico">Saverico</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-malin-gotez"
+                                    type="checkbox" name="malin-gotez">
+                                <label for="filter-malin-gotez">Malin Gotez</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-murreys" type="checkbox"
+                                    name="murreys">
+                                <label for="filter-murreys">Muretty</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-checkbox" id="filter-american-crew"
+                                    type="checkbox" name="american-crew">
+                                <label for="filter-american-crew">American Crew</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Группы товаров:</legend>
+                        <ul>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-radoi" type="radio" name="product-group"
+                                    id="filter-shaving" value="shaving">
+                                <label for="filter-shaving">Бритвенные принадлежности</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-radoi" type="radio" name="product-group"
+                                    id="filter-hair-care" value="hair-care">
+                                <label for="filter-hair-care">Средства для ухода</label>
+                            </li>
+                            <li class="filter-optons">
+                                <input class="visually-hidden filter-input filter-input-radoi" type="radio" name="product-group"
+                                    id="filter-accessories" value="accessories">
+                                <label for="filter-accessories">Аксесуары</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filter-button button" type="submit">Показать</button>
+                </form>
+            </section>
+            <section class="catalog">
+                <h2 class="visually-hidden">Список средств для ухода</h2>
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-1.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-2.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-3.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-4.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-5.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="#">
+                            <h3>
+                                <span class="catalog-item-category">Набор для петешествий</span>
+                                <span class="catalog-item-title">"Busty beard"</span>
+                            </h3>
+                            <p class="catalog-item-image">
+                                <a href="#"> <img src="img/product-6.jpg" alt="Набор для путешествий" width="220" height="165"></a>
+                            </p>
+                        </a>
+                        <p class="catalog-item-price">
+                            <b>2990 p</b>
+                            <a href="#" class="button">Купить</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item"><a href="#">1</a></li>
+                    <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">4</a></li>
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer class="main-footer">
+            <div class="container">
+                <p class="footer-contacts">
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Москва, пр-т Ленина, д. 25<br>
+                    <a href="#">Как на найти?</a><br>
+                    Телефон: +7(777) 777-77-77
+                </p>
+                <div class="footer-social">
+                    <b>Давайте дружить</b>
+                    <ul>
+                        <li><a href="#" class="social-button">VK</a></li>
+                        <li><a href="#" class="social-button">Instagramm</a></li>
+                        <li><a href="#" class="social-button">Facebook</a></li>
+                    </ul>
+                </div>
+                <p class="footer-copyright">
+                    <b>Разработано</b>
+                    <a href="#" class="button">Сайт разработчика</a>
+                </p>
+            </div>
+        </footer>
+
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите логин и пароль</p>
+        <span class="modal-close">x</span>
+    </section>
+</body>
+
+</html>
